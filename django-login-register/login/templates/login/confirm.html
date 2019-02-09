@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}注册确认{% endblock %}
+{% block content %}
+    <div class="raw">
+        <h1 class="text-center">{{ message }}</h1>
+    </div>
+
+    <script>
+        window.setTimeout("window.location='/logout/'", 3000) // 设置延时
+    </script>
+{% endblock %}

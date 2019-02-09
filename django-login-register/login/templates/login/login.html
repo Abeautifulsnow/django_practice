@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block custom_css %}
+    <link href="{% static 'css/login.css' %}" type="text/css" rel="stylesheet"/>
+{% endblock custom_css %}
+
+{% block title %}登录界面{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="col-md-4 col-md-offset-4">
+            <form action="{% url 'login' %}" class="form-login" method="POST">
+                {% if message %}
+                    <div class="alert alert-warning">{{ message }}</div>    
+                {% endif %}
+                    
+                <h2>欢迎登录</h2>
+                <!-- <div class="form-group">
+                    <label for="id_username">用户名：</label>
+                    <input type="text" name="username" class="form-control" id="id_username" placeholder="Username" autofocus required>
+                </div>
+                <div class="form-group">
+                    <label for="id_password">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+                    <input type="password" name="password" class="form-control" id="id_password" placeholder="Password" required>
+                </div> -->
+                <div class="form-group">
+                    {{ login_form.username.label_tag }}
+                    {{ login_form.username }}
+                </div>
+
+                <div class="form-group">
+                    {{ login_form.password.label_tag }}
+                    {{ login_form.password }}
+                </div>
+
+                <div class="form-group">
+                    {{ login_form.captcha.errors }}
+                    {{ login_form.captcha.label_tag }}
+                    {{ login_form.captcha }}
+                </div>
+
+                <button type="reset" class="btn btn-default pull-left">重置</button>
+                <span class="pwd-forget">
+                    <a class="pwd-forget" href="{% url 'pwd_forget' %}">忘记密码?</a>
+                </span>
+                <button type="submit" class="btn btn-primary pull-right">提交</button>
+                {% csrf_token %}
+            </form>
+        </div>
+    </div>
+{% endblock %}

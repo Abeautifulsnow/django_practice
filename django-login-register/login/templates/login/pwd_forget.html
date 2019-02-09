@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}密码找回{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <div class="col-md-4 col-md-offset-4">
+            <form action="{% url 'pwd_forget' %}" class="form-forget" method="POST">
+                {% if message %}
+                    <div class="alert alert-warning">{{ message }}</div>
+                {% endif %}
+
+                <h2 class="text-center">重置密码</h2>
+                <div class="form-group">
+                    {{ pwdforget_form.email.label_tag }}
+                    {{ pwdforget_form.email }}
+                </div>
+                <div class="form-group">
+                    {{ pwdforget_form.new_pwd1.label_tag }}
+                    {{ pwdforget_form.new_pwd1 }}
+                </div>
+
+                <button type="reset" class="btn btn-default pull-left">重置</button>
+                <button type="submit" class="btn btn-primary pull-right">提交</button>
+
+                {% csrf_token %}
+            </form>
+        </div>
+    </div>
+{% endblock content %}
