@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path
-from tools.views import generate_qrcode
+from tools.views import generate_qrcode, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index, name='home'),
     re_path('^qrcode/(.+)$', generate_qrcode, name='qrcode'),
 ]
