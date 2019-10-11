@@ -3,4 +3,5 @@ div.welcome-word h1 {
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%);
+    line-height: 1.5em;
 }

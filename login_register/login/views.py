@@ -4,7 +4,7 @@ import datetime
 from django.shortcuts import render, redirect
 from django.conf import settings
 
-from .utils.send_mail import send_email
+from .tasks import send_email
 from .models import User, ConfirmString
 from .forms import UserForm, RegisterForm, PwdForgetForm
 # Create your views here.
@@ -117,7 +117,9 @@ def register(request):
                 new_user.save()
 
                 code = make_confirm_string(new_user)
-                send_email(email, code)
+                # celery异步发送邮件
+                print("开始发送邮件，请注意查收")
+                send_email.delay(email, code)
 
                 return redirect('/login/') # 注册完,自动跳转到登录页面
     else:
@@ -175,14 +177,17 @@ def pwd_forget(request):
         return redirect('/index/')
     if request.method == 'POST':
         pwdforget_form = PwdForgetForm(request.POST, request=request)
-        message = '请检查输入的内容'
+        message = '请检查填写的内容'
         if pwdforget_form.is_valid():
             email = pwdforget_form.cleaned_data['email']
             new_pwd1 = pwdforget_form.cleaned_data['new_pwd1']
-            user = User.objects.get(email=email)
-            user.password = hash_code(new_pwd1)
-            user.save()
-            return redirect('/login/')
-    else:
-        pwdforget_form = PwdForgetForm()
+            try:
+                user = User.objects.get(email=email)
+                user.password = hash_code(new_pwd1)
+                user.save()
+                return redirect('/login/')
+            except:
+                message = "输入的邮箱不存在"
+        return render(request, 'login/pwd_forget.html', locals())
+    pwdforget_form = PwdForgetForm()
     return render(request, 'login/pwd_forget.html', locals())

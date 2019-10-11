@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',    # session框架
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # app注册
     'login',
     'captcha',
 ]
@@ -44,6 +45,8 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',  # session中间件
+    # 在session和cache之后，在CommonMiddleware之前
+    "django.middleware.locale.LocaleMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -128,8 +131,17 @@ STATICFILES_DIRS = (
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.189.cn'
 EMAIL_PORT = 25
-EMAIL_HOST_USER = 'xxxxxx'  # 这里修改成自己的
-EMAIL_HOST_PASSWORD = 'xxxxxx'  # 这里修改成自己的
+# EMAIL_HOST_USER = 'xxxxxx'  # 这里修改成自己的
+# EMAIL_HOST_PASSWORD = 'xxxxxx'  # 这里修改成自己的
+EMAIL_HOST_USER = "15639936570@189.cn"
+EMAIL_HOST_PASSWORD = "Lcp122920"
+MAIL_USE_TLS = True
 
 # 注册有效期天数
 CONFIRM_DAYS = 7
+
+# celery配置
+CELERY_BROKER_URL = 'redis://localhost:6379/1'
+CELERY_BROKER_TRANSPORT = 'redis'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/2'
+CELERY_TIMEZONE = TIME_ZONE

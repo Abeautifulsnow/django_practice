@@ -40,11 +40,11 @@
                     {{ login_form.captcha }}
                 </div>
 
-                <button type="reset" class="btn btn-default pull-left">重置</button>
+                <button type="reset" class="btn btn-default">重置</button>
                 <span class="pwd-forget">
                     <a class="pwd-forget" href="{% url 'pwd_forget' %}">忘记密码?</a>
                 </span>
-                <button type="submit" class="btn btn-primary pull-right">提交</button>
+                <button type="submit" class="btn btn-primary">提交</button>
                 {% csrf_token %}
             </form>
         </div>
