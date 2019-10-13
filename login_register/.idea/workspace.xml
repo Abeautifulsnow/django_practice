@@ -2,54 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34b6c1a4-e5a1-4dce-ad93-2e57fe02600c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../login_register/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../login_register/.idea/dataSources/763a17a3-19ec-4233-82fb-c17f6e22221b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/.idea/login_register.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/migrations/0002_auto_20181221_0930.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/templates/login/confirm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/templates/login/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/templates/login/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/templates/login/pwd_forget.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/templates/login/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/utils/send_mail.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login_register/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login_register/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login_register/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/login_register/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/static/bootstrap-3.3.7/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/static/bootstrap-3.3.7/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/static/bootstrap-3.3.7/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/static/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/static/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/static/css/register.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/static/js/jquery-3.3.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../django-login-register/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../login_register/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../login_register/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,43 +47,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../login_register/login/templates/login/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../login_register/login/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="190" column="65" lean-forward="true" selection-start-line="190" selection-start-column="65" selection-end-line="190" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <element signature="e#1347#1969#0" />
-                <element signature="e#2200#4126#0" />
-                <element signature="e#2856#2957#0" />
-                <element signature="e#4154#4349#0" />
-                <element signature="e#4383#5121#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../login_register/login/templates/login/pwd_forget.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -204,28 +121,6 @@
             <path>
               <item name="login_register" type="b2602c69:ProjectViewProjectNode" />
               <item name="login_register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="login_register" type="b2602c69:ProjectViewProjectNode" />
-              <item name="login_register" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="login_register" type="b2602c69:ProjectViewProjectNode" />
-              <item name="login_register" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="login_register" type="b2602c69:ProjectViewProjectNode" />
-              <item name="login_register" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="login_register" type="b2602c69:ProjectViewProjectNode" />
-              <item name="login_register" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -401,24 +296,23 @@
       <updated>1545361365228</updated>
       <workItem from="1570760837898" duration="10102000" />
       <workItem from="1570773595693" duration="255000" />
-      <workItem from="1570773897374" duration="2948000" />
+      <workItem from="1570773897374" duration="3318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13305000" />
+    <option name="totallyTimeSpent" value="13675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="22" width="1318" height="746" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18338558" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18338558" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32852563" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39903846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -446,13 +340,6 @@
     <SUITE FILE_PATH="coverage/django_login_register$celery.coverage" NAME="celery Coverage Results" MODIFIED="1570773318739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/login_register" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.virtualenvs/test/lib/python3.6/site-packages/django/forms/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="765" column="20" selection-start-line="765" selection-start-column="13" selection-end-line="765" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/test/lib/python3.6/site-packages/django/forms/widgets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -641,13 +528,6 @@
     <entry file="file://$PROJECT_DIR$/../login_register/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../login_register/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/login_register/lib/python3.6/site-packages/celery/app/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-23">
@@ -768,24 +648,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../login_register/login/templates/login/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/547816737/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="284" column="4" selection-start-line="284" selection-start-column="4" selection-end-line="284" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../login_register/login/templates/login/pwd_forget.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -801,18 +667,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/login_register/lib/python3.6/site-packages/django/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../login_register/login/templates/login/pwd_forget.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../login_register/login/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="190" column="65" lean-forward="true" selection-start-line="190" selection-start-column="65" selection-end-line="190" selection-end-column="65" />
+        <state relative-caret-position="1047">
+          <caret line="191" column="36" lean-forward="true" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#1347#1969#0" />
             <element signature="e#2200#4126#0" />
             <element signature="e#2856#2957#0" />
             <element signature="e#4154#4349#0" />
             <element signature="e#4383#5121#0" />
+            <element signature="e#5153#5210#1" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../login_register/login/templates/login/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../login_register/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
