@@ -1,4 +1,4 @@
-Django==2.1.4
+Django==2.1.11
 image==1.5.27
 jedi==0.13.2
 parso==0.3.1
