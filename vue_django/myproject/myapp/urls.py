@@ -1,8 +1,8 @@
-from django.conf.urls import url, include
+from django.urls import path
 
 from . import views
 
 urlpatterns = [
-url(r'add_book$', views.add_book, ),
-url(r'show_books$', views.show_books, ),
+    path('add_book', views.add_book),
+    path('show_books', views.show_books),
 ]

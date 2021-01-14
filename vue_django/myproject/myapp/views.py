@@ -10,13 +10,13 @@ from .models import Book
 
 @require_http_methods(["GET"])
 def add_book(request):
-    response = {}
+    response: dict = {}
     try:
         book = Book(book_name=request.GET.get('book_name'))
         book.save()
         response['msg'] = 'success'
         response['error_num'] = 0
-    except  Exception as e:
+    except Exception as e:
         response['msg'] = str(e)
         response['error_num'] = 1
 
@@ -25,13 +25,13 @@ def add_book(request):
 
 @require_http_methods(["GET"])
 def show_books(request):
-    response = {}
+    response: dict = {}
     try:
         books = Book.objects.filter()
         response['list'] = json.loads(serializers.serialize("json", books))
         response['msg'] = 'success'
         response['error_num'] = 0
-    except  Exception as e:
+    except Exception as e:
         response['msg'] = str(e)
         response['error_num'] = 1
 
