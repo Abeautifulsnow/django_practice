@@ -1,19 +1,19 @@
 <template>
   <div class="home">
     <el-row display="margin-top:10px">
-        <el-input v-model="input" placeholder="请输入书名" style="display:inline-table; width: 30%; float:left"></el-input>
-        <el-button type="primary" @click="addBook()" style="float:left; margin: 2px;">新增</el-button>
+        <el-input v-model="input" placeholder="请输入书名" style="display:inline-table; width: 30%; float:center"></el-input>
+        <el-button type="primary" @click="addBook()" style="float:center; margin: 2px;">新增</el-button>
     </el-row>
     <el-row>
         <el-table :data="bookList" style="width: 100%" border>
           <el-table-column prop="id" label="编号" min-width="100">
-            <template scope="scope"> {{ scope.row.pk }} </template>
+            <template slot-scope="scope"> {{ scope.row.pk }} </template>
           </el-table-column>
           <el-table-column prop="book_name" label="书名" min-width="100">
-            <template scope="scope"> {{ scope.row.fields.book_name }} </template>
+            <template slot-scope="scope"> {{ scope.row.fields.book_name }} </template>
           </el-table-column>
           <el-table-column prop="add_time" label="添加时间" min-width="100">
-            <template scope="scope"> {{ scope.row.fields.add_time }} </template>
+            <template slot-scope="scope"> {{ scope.row.fields.add_time }} </template>
           </el-table-column>
         </el-table>
     </el-row>
