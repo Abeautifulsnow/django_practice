@@ -1,2 +1,2 @@
-Django==2.2.25
+Django==2.2.27
 pycryptodome==3.9.0
